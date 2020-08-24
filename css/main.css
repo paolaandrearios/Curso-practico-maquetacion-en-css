@@ -1,4 +1,5 @@
 body {
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -67,6 +68,48 @@ nav .profile-link {
 }
 
 nav .profile-link a {
-  color: black;
-  border-bottom: 1px solid black ;
+  color:white;
+  border-bottom: 1px solid white;
+}
+
+.home-main {
+  display:grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height:100%;
+  background-image: url("../assets/img/Cover.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -90px;
+
+}
+
+.home-main section {
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+
+.home-main-text {
+  font-family: 'Roboto mono', monospace;
+  font-size: 30px;
+  font-weight: 700px;
+  letter-spacing: 10px;
+  color:white;
+  text-align: center;
+}
+
+.home-main-button {
+  width: 110px;
+  height: 50px;
+  background: #47cfac;
+  display: grid;
+  align-items: center;
+}
+
+.home-main-button a {
+  font-weight: 700;
+  font-size:18px;
 }
